@@ -1,12 +1,11 @@
 .. _about_index:
 
-=============
-About IPython
-=============
+==========
+Об IPython
+==========
 
 .. toctree::
    :maxdepth: 1
 
    history
    license_and_copyright
-

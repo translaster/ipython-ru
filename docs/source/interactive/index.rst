@@ -1,17 +1,21 @@
-========
-Tutorial
-========
+===========
+Руководство
+===========
 
-This section of IPython documentation will walk you through most of the IPython
-functionality. You do not need to have any deep knowledge of Python to read this
-tutorial, though some sections might make slightly more sense if you have already
-done some work in the classic Python REPL.
+В этом разделе документации IPython вы познакомитесь с большинством функций IPython.
+Вам не нужно обладать глубокими знаниями Python, чтобы прочитать это руководство,
+хотя некоторые разделы могут иметь немного больше смысла, если вы уже проделали
+некоторую работу в классическом Python REPL.
+
+
+
 
 .. note::
-    
-    Some part of this documentation are more than a decade old so might be out
-    of date, we welcome any report of inaccuracy, and Pull Requests that make
-    that up to date.
+
+    Некоторым частям этой документации более десяти лет, поэтому они могут устареть,
+    мы приветствуем любые сообщения о неточностях и запросы на извлечение, которые делают
+    его актуальным.
+
 
 .. toctree::
    :maxdepth: 2
@@ -28,5 +32,5 @@ done some work in the classic Python REPL.
 
 .. seealso::
 
-    `A Qt Console for Jupyter <https://jupyter.org/qtconsole/>`__
+    `Консоль Qt для Jupyter <https://jupyter.org/qtconsole/>`__
     `The Jupyter Notebook <https://jupyter-notebook.readthedocs.io/en/latest/>`__

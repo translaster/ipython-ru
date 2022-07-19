@@ -1,11 +1,11 @@
 .. _config_index:
 
 ===============================
-Configuration and customization
+Конфигурирование и донастройка
 ===============================
 
-Configuring IPython
--------------------
+Конфигурирование IPython
+------------------------
 
 .. toctree::
    :maxdepth: 2
@@ -20,8 +20,8 @@ Configuring IPython
    :doc:`/development/config`
       Technical details of the config system.
 
-Extending and integrating with IPython
---------------------------------------
+Расширение и интеграция с IPython
+---------------------------------
 
 .. toctree::
    :maxdepth: 2

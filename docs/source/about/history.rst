@@ -1,34 +1,33 @@
 .. _history:
 
 =======
-History
+История
 =======
 
-Origins
-=======
+Происхождение
+=============
 
-IPython was starting in 2001 by Fernando Perez while he was a graduate student
-at the University of Colorado, Boulder. IPython as we know it today grew out
-of the following three projects:
+IPython был основан в 2001 году Фернандо Пересом, когда он был аспирантом
+Университета Колорадо в Боулдере. IPython, каким мы его знаем сегодня, вырос из
+следующих трех проектов:
 
-* ipython by Fernando Pérez. Fernando began using Python and ipython began as
-  an outgrowth of his desire for things like Mathematica-style prompts, access
-  to previous output (again like Mathematica's % syntax) and a flexible
-  configuration system (something better than :envvar:`PYTHONSTARTUP`).
-* IPP by Janko Hauser. Very well organized, great usability. Had
-  an old help system. IPP was used as the "container" code into
-  which Fernando added the functionality from ipython and LazyPython.
-* LazyPython by Nathan Gray. Simple but very powerful. The quick
-  syntax (auto parens, auto quotes) and verbose/colored tracebacks
-  were all taken from here.
+* ipython Фернандо Переса. Фернандо начал использовать Python, а ipython появился как
+результат его стремления к таким вещам, как подсказки в стиле Mathematica, доступ
+к предыдущему выводу (опять же, как синтаксис % Mathematica) и гибкая
+система настройки (что-то лучше, чем :envvar:`PYTHONSTARTUP`).
+* IPP Янко Хаузера. Очень хорошо организовано, отличное удобство использования. Была
+старая справочная система. IPP использовался в качестве кода "контейнера" в который
+добавили функциональность из ipython и LazyPython.
+* LazyPython от Натана Грея. Простой, но очень мощный. Быстрый синтаксис
+(автоматические скобки, автоматические кавычки) и подробные/цветные трассировки
+все они были взяты отсюда.
 
-Here is how Fernando describes the early history of IPython:
+Вот как Фернандо описывает раннюю историю IPython:
 
-    When I found out about IPP and LazyPython I tried to join all three
-    into a unified system. I thought this could provide a very nice
-    working environment, both for regular programming and scientific
-    computing: shell-like features, IDL/Matlab numerics, Mathematica-type
-    prompt history and great object introspection and help facilities. I
-    think it worked reasonably well, though it was a lot more work than I
-    had initially planned.
-
+    Когда я узнал об IPP и LazyPython, я попытался соединить всем три
+    в единую систему. Я подумал, что это могло бы обеспечить очень хорошую
+    рабочую среду, как для регулярного программирования, так и для научных
+    вычислений: функции, подобные bash, числовые методы IDL/Matlab, Mathematica-type
+    оперативная история и отличный самоанализ объекта и вспомогательных средств. Я
+    думаю, что оно сработалось достаточно хорошо, хотя было намного больше работы, чем я
+    изначально планировал.
