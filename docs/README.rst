@@ -1,18 +1,17 @@
-IPython Documentation
+Документация IPython
 ---------------------
 
-This directory contains the majority of the documentation for IPython.
+Этот каталог содержит большую часть документации по IPython.
+
+Развертывание документации
+--------------------------
+
+Документация автоматически развертывается на ReadTheDocs при каждом пуше
+или объединении пул реквеста.
 
 
-Deploy docs
------------
-
-Documentation is automatically deployed on ReadTheDocs on every push or merged
-Pull requests.
-
-
-Requirements
-------------
+Требования
+----------
 
 The documentation must be built using Python 3.
 
@@ -29,7 +28,7 @@ In a conda environment, or a Python 3 ``venv``, you should be able to run::
   pip install -U -r docs/requirements.txt
 
 
-Build Commands
+Команды сборки
 --------------
 
 The documentation gets built using ``make``, and comes in several flavors.
@@ -56,7 +55,7 @@ for example,
 ``make clean html`` will do a complete rebuild of the docs or ``make clean pdf`` will do a complete build of the pdf.
 
 
-Continuous Integration
+Непрерывная интеграция
 ----------------------
 
 Documentation builds are included in the Travis-CI continuous integration process,

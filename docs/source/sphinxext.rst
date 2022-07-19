@@ -2,7 +2,7 @@
 .. _ipython_directive:
 
 ========================
-IPython Sphinx Directive
+Директива IPython Sphinx
 ========================
 
 .. note::
@@ -45,7 +45,7 @@ will be rendered as
    document that generates the rendered output.
 
 
-Directive and options
+Директивы и параметры
 =====================
 
 The IPython directive takes a number of options detailed here.
@@ -87,8 +87,8 @@ directive block or they can decorate individual lines of code as explained
 in :ref:`pseudo-decorators`.
 
 
-Persisting the Python session across IPython directive blocks
-=============================================================
+Сохранение сеанса Python в блоках директив IPython
+==================================================
 
 The state from previous sessions is stored, and standard error is
 trapped. At doc build time, ipython's output and std err will be
@@ -115,8 +115,8 @@ left off.
   SyntaxError: invalid syntax
 
 
-Adding documentation tests to your IPython directive
-====================================================
+Добавление тестов документации в вашу директиву IPython
+=======================================================
 
 The embedded interpreter supports some limited markup.  For example,
 you can put comments in your ipython sessions, which are reported
@@ -145,8 +145,8 @@ match on a doctest assertion, an error will occur.
 
 For more information on @doctest decorator, please refer to the end of this page in Pseudo-Decorators section.
 
-Multi-line input
-================
+Многострочный ввод
+==================
 
 Multi-line input is supported.
 
@@ -159,8 +159,8 @@ Multi-line input is supported.
    In [131]: print(url.split('&'))
    ['http://ichart.finance.yahoo.com/table.csv?s=CROX', 'd=9', 'e=22',
 
-Testing directive outputs
-=========================
+Выходные данные директивы по тестированию
+=========================================
 
 The IPython Sphinx Directive makes it possible to test the outputs that you provide with your code. To do this,
 decorate the contents in your directive block with one of the options listed
@@ -341,8 +341,8 @@ Then call it from a subsequent section.
    Out [5]: 4
 
 
-Writing Pure Python Code
-------------------------
+Написание чистого кода Python
+-----------------------------
 
 Pure python code is supported by the optional argument `python`. In this pure
 python syntax you do not include the output from the python interpreter. The
@@ -382,8 +382,8 @@ Similarly, std err is inserted
    foo = 'bar'
    foo[)
 
-Handling Comments
-==================
+Обработка комментариев
+======================
 
 Comments are handled and state is preserved
 
@@ -400,7 +400,7 @@ If you don't see the next code block then the options work.
    ioff()
    ion()
 
-Splitting Python statements across lines
+Разделение инструкций Python по строкам
 ========================================
 
 Multi-line input is handled.
@@ -439,8 +439,8 @@ to use the doctest option.
 
 .. _pseudo-decorators:
 
-Pseudo-Decorators
-=================
+Псевдодекораторы
+================
 
 Here are the supported decorators, and any optional arguments they
 take.  Some of the decorators can be used as options to the entire
@@ -478,8 +478,8 @@ line just below them (eg ``savefig``).
     match. Also, can be applied to the entire ``.. ipython`` block as a
     directive option with ``:doctest:``.
 
-Configuration Options
-=====================
+Параметры конфигурации
+======================
 
 ipython_savefig_dir
 
@@ -512,8 +512,7 @@ ipython_promptout
     in the prompt.
 
 
-Automatically generated documentation
-=====================================
+Автоматически создаваемая документация
+======================================
 
 .. automodule:: IPython.sphinxext.ipython_directive
-
