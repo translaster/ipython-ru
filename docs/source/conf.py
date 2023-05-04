@@ -41,6 +41,14 @@ else:
     html_theme = "sphinx_rtd_theme"
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
+# Allow Python scripts to change behaviour during sphinx run
+os.environ["IN_SPHINX_RUN"] = "True"
+
+autodoc_type_aliases = {
+    "Matcher": " IPython.core.completer.Matcher",
+    "MatcherAPIv1": " IPython.core.completer.MatcherAPIv1",
+}
+
 # If your extensions are in another directory, add it here. If the directory
 # is relative to the documentation root, use os.path.abspath to make it
 # absolute, like shown here.
@@ -175,8 +183,7 @@ today_fmt = '%B %d, %Y'
 
 # Exclude these glob-style patterns when looking for source files. They are
 # relative to the source/ directory.
-exclude_patterns = []
-
+exclude_patterns = ["**.ipynb_checkpoints"]
 
 # If true, '()' will be appended to :func: etc. cross-reference text.
 #add_function_parentheses = True
@@ -202,7 +209,6 @@ default_role = 'literal'
 # must exist either in Sphinx' static/ path, or in one of the custom paths
 # given in html_static_path.
 # html_style = 'default.css'
-
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
@@ -317,6 +323,10 @@ texinfo_documents = [
 ]
 
 modindex_common_prefix = ['IPython.']
+
+
+def setup(app):
+    app.add_css_file("theme_overrides.css")
 
 
 # Cleanup

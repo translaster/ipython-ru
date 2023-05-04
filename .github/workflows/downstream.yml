@@ -8,6 +8,8 @@ on:
   - cron:  '23 1 * * 1'
   workflow_dispatch:
 
+permissions:
+  contents: read
 
 jobs:
   test:
@@ -21,9 +23,9 @@ jobs:
             python-version: "3.9"
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version: ${{ matrix.python-version }}
     - name: Update Python installer
@@ -41,7 +43,7 @@ jobs:
         python -m pip install --upgrade -e file://$PWD#egg=ipython[test]
         # we must install IPython after ipykernel to get the right versions.
         python -m pip install --upgrade --upgrade-strategy eager flaky ipyparallel
-        python -m pip install --upgrade 'pytest<7' 
+        python -m pip install --upgrade 'pytest<7'  'pytest_asyncio<0.21'
     - name: pytest
       env:
         COLUMNS: 120
